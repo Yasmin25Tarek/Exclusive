@@ -1,5 +1,4 @@
 
-import { IOrder } from '@/interfaces/order.interface';
 import { getOrderDetails } from '@/services/order.services';
 import React from 'react'
 import {
@@ -12,8 +11,7 @@ import {
 } from "@/components/ui/table"
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { CartItem, IOrderDetails } from '@/interfaces/orderDetails.interface';
-import { IProduct } from '@/interfaces/product.interface';
+import {  IOrderDetails } from '@/interfaces/orderDetails.interface';
 import Image from 'next/image';
 
 
