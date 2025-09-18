@@ -1,11 +1,9 @@
 import { IProduct } from '@/interfaces/product.interface'
 import { getProductsDetails } from '@/services/product.services'
-import { Heart, Star, Truck } from 'lucide-react';
+import { RecycleIcon, Star, Truck } from 'lucide-react';
 import React from 'react'
 import ProductSlider from '../productSlider';
-import { Button } from '@/components/ui/button';
-import { PiArrowsCounterClockwiseBold } from "react-icons/pi";
-import { addToCart } from '@/services/cart.services';
+
 import AddToCartBtn from '../AddToCartBtn';
 import AddToWishListBtn from '@/app/(Producted)/wishlist/AddToWishListBtn';
 
@@ -42,7 +40,7 @@ export default async function ProductDetails({params: {productId}}:{params: {pro
                             </div>
                         </li>
                         <li className='flex items-center gap-4 p-5'>
-                            <PiArrowsCounterClockwiseBold size={40}/>
+                            <RecycleIcon size={40}/>
                             <div className="">
                                 <h3 className='font-medium'>Return Delivery</h3>
                                 <p className='font-medium '>Free 30 Days Delivery Returns. <span className='underline'>Details</span></p>
